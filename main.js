@@ -1,10 +1,13 @@
+import logoLight from './assets/logo.mode=light.svg'
+import logoDark from './assets/logo.mode=dark.svg'
 
-import './reset.css';
-import './style.css';
+// import './reset.css';
+// import './style.css';
 
 
 let mode = 'dark';
 let color = 'white'
+
 
 const app = document.querySelector('#app');
 const themeButton = document.querySelector('.changeThemeButton');
@@ -18,7 +21,7 @@ document.querySelector('#app').innerHTML = `
     <div class="inner">
       <div>
       <h1 class="logo">
-        <img width="40px" height="40px" src="./public/assets/logo.mode=${mode}.svg" alt="우버택시 로고" />
+        <img width="40px" height="40px" src="${mode === 'dark' ?logoDark: logoLight}" alt="우버택시 로고" />
       </h1>
 
       <ul class="gnb">

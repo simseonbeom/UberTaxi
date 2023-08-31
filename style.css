@@ -110,12 +110,12 @@
 
 
 .visual{
-  background: url("./public/assets/Visual/light.UberTaxi.jpg") no-repeat center;
+  background: url("/Visual/light.UberTaxi.jpg") no-repeat center;
   background-size:cover;
 }
 
 .dark-theme .visual{
-  background: url("./public/assets/Visual/dark.UberTaxi.jpg") no-repeat center;
+  background: url("/Visual/dark.UberTaxi.jpg") no-repeat center;
   background-size:cover;
 }
 
