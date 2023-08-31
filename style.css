@@ -1,0 +1,229 @@
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://simseonbeom.github.io/offline-class/theme/css/global.css');
+@import url('https://simseonbeom.github.io/offline-class/theme/css/dark.css');
+@import url('https://simseonbeom.github.io/offline-class/theme/css/light.css');
+
+
+
+
+#app{
+  height: 100vh;
+  background: var(--secondary)
+}
+
+.changeThemeButton{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10vh;
+  padding: var(--space-3);
+  cursor: pointer;
+}
+
+
+#header{
+  background: var(--primary);
+  font: var(--label-medium);
+  
+}
+
+#header .inner{
+  display: flex;
+  padding: var(--space-3) var(--space-16);
+  max-width: 1280px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#header .inner > div{
+  display: flex;
+}
+#header .gnb{ 
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  
+}
+
+#header .gnb button{
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  border-radius: 30px;
+  box-sizing: border-box;
+  background:transparent;
+  color: var(--secondary);
+  transition: background 0.5s;
+}
+
+#header button:hover{
+  background:var(--contents-content-secondary)
+}
+#header button:focus{
+  box-shadow: dodgerblue 0 0 0 3px inset ;
+  
+}
+
+
+#header .gnb svg{
+  margin-left: var(--space-1);
+}
+
+.logo{
+  margin-right: var(--space-6);
+  height: 40px;
+}
+
+
+
+#header .lang{
+  background:none;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  margin-right: var(--space-3);
+  box-sizing: border-box;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+#header .lang svg{
+  margin-right: var(--space-1);
+}
+
+
+#header .sign{
+  color: var(--primary);
+  background: var(--secondary);
+  padding: var(--space-2) var(--space-3);
+  border-radius: 30px;
+  transition: background 0.5s, color 0.5s;
+}
+
+#header .sign:hover{
+  color: var(--secondary)
+}
+
+
+.visual{
+  background: url("./public/assets/Visual/light.UberTaxi.jpg") no-repeat center;
+  background-size:cover;
+}
+
+.dark-theme .visual{
+  background: url("./public/assets/Visual/dark.UberTaxi.jpg") no-repeat center;
+  background-size:cover;
+}
+
+.hamburger{
+  background:none;
+  border: 3px solid transparent;
+  margin-left: var(--space-3);
+  cursor: pointer;
+  display: none;
+}
+
+.visual{
+  padding-bottom: var(--space-16);
+}
+.visual .inner{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-16);
+  
+}
+.visual .textContents{
+  color: var(--primary);
+}
+
+.visual .textContents h2{
+  font: var(--heading-xxxl);
+}
+
+.visual .textContents p{
+  margin: var(--space-7) 0 var(--space-7) 0;
+  font: var(--label-medium);
+}
+
+.visual .download{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: var(--space-4) var(--space-5);
+  background: var(--primary);
+  color: var(--secondary);
+  font: var(--label-medium);
+  
+}
+
+.visual .download:hover{
+  background: var(--contents-content-secondary)
+}
+
+.visual .download:focus{
+  box-shadow: dodgerblue 0 0 0 3px inset ;
+}
+.visual .download svg{
+  margin-right: var(--space-1);
+}
+
+
+
+
+@media screen and (max-width : 1152px) {
+  #header .inner{
+    
+    padding: var(--space-3) var(--space-4);
+    
+  }
+
+  #header .gnb{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  #header .lang{
+    display: none;
+  }
+
+
+  .visual .textContents h2{
+    font: var(--heading-xxl);
+  }
+
+
+  .visual{
+    padding-bottom: var(--space-14);
+  }
+
+  .visual .inner{
+    padding: var(--space-14) var(--space-8);
+  }
+
+}
+
+@media screen and (max-width : 600px) {
+
+
+  
+
+  .visual .textContents h2{
+    font: var(--heading-xl);
+  }
+
+
+  .visual{
+    padding-bottom: 0;
+  }
+
+  .visual .inner{
+    padding: var(--space-10) var(--space-6);
+  }
+
+}
+
